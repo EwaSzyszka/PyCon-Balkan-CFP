@@ -1,4 +1,4 @@
-## Sign Lnaguage Recognition with Python
+## Sign Lanaguage Recognition with Python
 Welcome to the 30 minute Workshop which will delve into basics of Sign Lnaguage Recognition in Python. 
 
 
