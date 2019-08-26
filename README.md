@@ -11,5 +11,29 @@ https://www.kaggle.com/kuzivakwashe/significant-asl-sign-language-alphabet-datas
 
 ### Methodology
 
+1. Train a Keras model on a VGG-16 Architecture for the sign language alphabet 
+2. Save the model as .h5 file
+``` 
+ImportError: `save_model` requires h5py.
+```
+3. Edit the following code to grab images from the camera
+``` 
+from keras import load_model
+model = load_model(path) # open saved model/weights from .h5 file
 
+def predict_image(image):
+    image = np.array(image, dtype='float32')
+    image /= 255
+    pred_array = model.predict(image)
+
+    # model.predict() returns an array of probabilities - 
+    # np.argmax grabs the index of the highest probability.
+    result = gesture_names[np.argmax(pred_array)]
+    
+    # A bit of magic here - the score is a float, but I wanted to
+    # display just 2 digits beyond the decimal point.
+    score = float("%0.2f" % (max(pred_array[0]) * 100))
+    print(f'Result: {result}, Score: {score}')
+    return result, score
+``` 
 ### PowerPoint presentation
