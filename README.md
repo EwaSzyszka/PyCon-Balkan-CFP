@@ -35,5 +35,10 @@ def predict_image(image):
     score = float("%0.2f" % (max(pred_array[0]) * 100))
     print(f'Result: {result}, Score: {score}')
     return result, score
-``` 
+   
+```
+
+### Architecture
+
+https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5 
 ### PowerPoint presentation
