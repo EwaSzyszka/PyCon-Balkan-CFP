@@ -11,8 +11,9 @@ https://www.kaggle.com/kuzivakwashe/significant-asl-sign-language-alphabet-datas
 
 ### Methodology
 
-1. Train a Keras model on a VGG-16 Architecture for the sign language alphabet 
-2. Save the model as .h5 file
+1. Pre-process the data 
+2. Train a Keras model on a VGG-16 Architecture for the sign language alphabet 
+3. Save the model as .h5 file
 ``` 
 ImportError: `save_model` requires h5py.
 ```
