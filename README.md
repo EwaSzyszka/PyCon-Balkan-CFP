@@ -7,22 +7,34 @@ We will first introduce Convolutional Neural Networks and see what are the basic
 _______EXTRACTING THE HIGH LEVEL FEATURES __________
 
 1. Convolutional layers 
- - produce the feature maps 
+ - INPUT: Image as an array of pixels 
+ - OUTPUT : produce the feature maps 
+ - WHAT: extract various high level features based on the Kernel used 
+ 
 2. Max pooling layer 
-  - downsising the layer 
+  - INPUT: Convoluted image
+  - OUTPUT: Downsized array 
+  - WHAT: downsising the layer 
+  
 3. ReLU activation
-  - produce the rectified feature maps 
+  - INPUT: Downsized array 
+  - OUTPUT: Rectified Feature Map 
+  - WHAT: turn all negative numbers to 0 and return the positive values as they were 
   
   
  ________USING HIGH LEVEL FEATURES TO CLASIFY THE  INPUT IMAGE ______
  
-4. Fully connected layers 
+1. Fully connected layers 
+  - INPUT:Rectified and downsized Feature map
+  - OUTPUT: 
+  - WHAT: 
+  
 5. Softmax activation function 
   - ensuring that the output of the fully connected layer adds up to 1 
   - Softmax function takes the logits vector and turns it into a vector which nicely sums up to 1 and is normalized
 
+Softmax function:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
 <img src="https://latex.codecogs.com/gif.latex?f(y_{i})=&space;\frac{e^{y^{i}}}{\sum&space;e^{y^{i}}}" title="f(y_{i})= \frac{e^{y^{i}}}{\sum e^{y^{i}}}" />
 
