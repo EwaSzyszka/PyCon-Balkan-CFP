@@ -1,5 +1,5 @@
 ## Sign Lanaguage Alphabet Recognition with Python
-Welcome to the 30 minute Workshop which will delve into basics of Sign Lanaguage Recognition in Keras. 
+Welcome to the workshop in which will delve into basics of Sign Lanaguage Recognition in Keras. 
 We will first introduce Convolutional Neural Networks and see what are the basic building blocks of them, next we will look at the Sign Language Alphabet Recognition project as an example of Neural Network Implementation. After this workshop you will be familiar with the basic Neural Network terminology and you will build an understanding of a sample Neural Network Architecture, namely the VGG architecture. At the end of this document there is a vocabulary list, which you are free to refer to at any point, as well as there is a list of further literature provided if you are interested in furthering your understanding. 
 
 ### What are Convolutional Neural Networks
