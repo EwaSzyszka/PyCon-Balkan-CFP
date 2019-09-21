@@ -42,7 +42,12 @@ Pooling Layer =
 Fully connected layer = 
 Activation layer = 
 Max and min pooling = 
-
+Feature learning = 
+Perceptron = 
+feed-forward neural network
+backpropagation 
+Softmax Classification 
+Dot product = filter * pixel wise representation of the input
 
 
 ### Further Readings
