@@ -20,15 +20,9 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
 5. Softmax activation function 
   - ensuring that the output of the fully connected layer adds up to 1 
   - Softmax function takes the logits vector and turns it into a vector which nicely sums up to 1 and is normalized
-  Hi `$z = x + y$`.
-
-`$$a^2 + b^2 = c^2$$`
-
-`$$\begin{vmatrix}a & b\\
-c & d
-\end{vmatrix}=ad-bc$$`
 
 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
 
 
