@@ -17,11 +17,14 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
   - WHAT: downsising the layer 
   
 3. ReLU activation
+
+ <img src="https://latex.codecogs.com/gif.latex?f(x)=&space;max(0,x)" title="f(x)= max(0,x)" />
+ 
   - INPUT: Downsized array 
   - OUTPUT: Rectified Feature Map 
   - WHAT: turn all negative numbers to 0 and return the positive values as they were 
   
-  <img src="https://latex.codecogs.com/gif.latex?f(x)=&space;max(0,x)" title="f(x)= max(0,x)" />
+ 
   
  ________USING HIGH LEVEL FEATURES TO CLASIFY THE  INPUT IMAGE ______
  
@@ -31,6 +34,9 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
   - WHAT: 
   
 5. Softmax activation function 
+
+<img src="https://latex.codecogs.com/gif.latex?f(x_{i})=&space;\frac{e^{x^{i}}}{\sum&space;e^{x^{i}}}" title="f(x_{i})= \frac{e^{x^{i}}}{\sum e^{x^{i}}}" />
+
   - INPUT: vector of arbitrary real-valued score
   - OUTPUT: vector of values that add up to 1 
   - WHAT: translates the values into probabilities
@@ -39,7 +45,7 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
 Softmax function:
 
 
-<img src="https://latex.codecogs.com/gif.latex?f(x_{i})=&space;\frac{e^{x^{i}}}{\sum&space;e^{x^{i}}}" title="f(x_{i})= \frac{e^{x^{i}}}{\sum e^{x^{i}}}" />
+
 
 ### Methodology
 
