@@ -47,7 +47,7 @@ Softmax function:
 
 
 
-### Methodology
+### Project methodology
 
 
 1. Get the training data 
