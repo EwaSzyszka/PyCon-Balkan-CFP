@@ -4,6 +4,8 @@ We will first introduce Convolutional Neural Networks and see what are the basic
 
 ### What are Convolutional Neural Networks
 
+Here place an image and gifs illustrating the overview of the CNN
+
 _______EXTRACTING THE HIGH LEVEL FEATURES __________
 
 1. Convolutional layers 
@@ -41,10 +43,6 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
   - OUTPUT: vector of values that add up to 1 
   - WHAT: translates the values into probabilities
   
-
-Softmax function:
-
-
 
 
 ### Project methodology
@@ -100,18 +98,39 @@ __________ DATA PREPARATION AND PRE_PROCESSING __________
   
  __________ SETTING UP THE VGG-16 ARCHITECTURE __________
  
- 9. 
+The VGG16 architecture consists of twelve convolutional layers, some of which are followed by maximum pooling layers and then four fully-connected layers and finally a 1000-way softmax classifier. HIstory and a bit of introduction of VGG-16 and CNN.
+ 
+ 1. Setting up the Keras implementation
+ 
+ Here paste a short code sample in Keras
+ 
+ 2. Make a test prediction 
+ 
+  - INPUT: 
+  - OUTPUT: 
+  - WHAT: 
   
-2. Train a Keras model on a VGG-16 Architecture for the sign language alphabet 
+  3. Assess the model 
+  
+  Here give some metrix to how the model performed
+  
+  4. Save the model 
+  
+  __________ CAPTURING THE IMAGES FOR SIGN RECOGNITION __________
+ 
+ 1. Connect to the camera 
+ 
+ 2. Press enter to capture the frame 
+ 
+ 3. Press escape when all of the frames of your ineterst are already captured 
+ 
+   __________ SIGN RECOGNITION FROM CAPTURED IMAGES __________
+ 
+ 1. Load the model 
+ 
+ 2. Use the model to classify the unseen data 
 
-https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5 
-
-3. Save the model as .h5 file
-4. Capture the images from camera 
-5. Test the captured images with the model 
-
-### Outcomes
-
+Here paste images of sign recognition screen shots 
 
 ### Glossary 
 
@@ -144,7 +163,9 @@ Forward propagation =
 
 
 ### Further Readings
-
+http://colah.github.io/posts/2014-07-Conv-Nets-Modular/
+http://cs231n.github.io/
+https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/
 
 ### About me 
 I am a Computer Science student at Minerva Schools at KGI and Electronics Engineering student at AGH. This workshop is based on my [Bachelor's Thesis Proposal](https://ewaszyszka.myportfolio.com/bachelor-thesis-proposal). If you are interested delving further into the topic and exploring it further feel free to reach out (ewa.szyszka@minerva.kgi.edu).
