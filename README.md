@@ -21,6 +21,7 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
   - OUTPUT: Rectified Feature Map 
   - WHAT: turn all negative numbers to 0 and return the positive values as they were 
   
+  <img src="https://latex.codecogs.com/gif.latex?f(x)=&space;max(0,x)" title="f(x)= max(0,x)" />
   
  ________USING HIGH LEVEL FEATURES TO CLASIFY THE  INPUT IMAGE ______
  
@@ -30,13 +31,15 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
   - WHAT: 
   
 5. Softmax activation function 
-  - ensuring that the output of the fully connected layer adds up to 1 
-  - Softmax function takes the logits vector and turns it into a vector which nicely sums up to 1 and is normalized
+  - INPUT: vector of arbitrary real-valued score
+  - OUTPUT: vector of values that add up to 1 
+  - WHAT: translates the values into probabilities
+  
 
 Softmax function:
 
 
-<img src="https://latex.codecogs.com/gif.latex?f(y_{i})=&space;\frac{e^{y^{i}}}{\sum&space;e^{y^{i}}}" title="f(y_{i})= \frac{e^{y^{i}}}{\sum e^{y^{i}}}" />
+<img src="https://latex.codecogs.com/gif.latex?f(x_{i})=&space;\frac{e^{x^{i}}}{\sum&space;e^{x^{i}}}" title="f(x_{i})= \frac{e^{x^{i}}}{\sum e^{x^{i}}}" />
 
 ### Methodology
 
@@ -84,6 +87,7 @@ Dot product = filter * pixel wise representation of the input
 Overfitting = 
 Multilayer perceptron = 
 feedforward network = will only have a single input layer and a single output layer, it can have zero or multiple Hidden Layers.
+Forward propagation = 
 
 
 ### Further Readings
