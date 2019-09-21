@@ -4,6 +4,33 @@ We will first introduce Convolutional Neural Networks and see what are the basic
 
 ### What are Convolutional Neural Networks
 
+_______EXTRACTING THE HIGH LEVEL FEATURES __________
+
+1. Convolutional layers 
+ - produce the feature maps 
+2. Max pooling layer 
+  - downsising the layer 
+3. ReLU activation
+  - produce the rectified feature maps 
+  
+  
+ ________USING HIGH LEVEL FEATURES TO CLASIFY THE  INPUT IMAGE ______
+ 
+4. Fully connected layers 
+5. Softmax activation function 
+  - ensuring that the output of the fully connected layer adds up to 1 
+  - Softmax function takes the logits vector and turns it into a vector which nicely sums up to 1 and is normalized
+  Hi `$z = x + y$`.
+
+`$$a^2 + b^2 = c^2$$`
+
+`$$\begin{vmatrix}a & b\\
+c & d
+\end{vmatrix}=ad-bc$$`
+
+
+
+
 
 ### Methodology
 
@@ -48,6 +75,9 @@ feed-forward neural network
 backpropagation 
 Softmax Classification 
 Dot product = filter * pixel wise representation of the input
+Overfitting = 
+Multilayer perceptron = 
+feedforward network = will only have a single input layer and a single output layer, it can have zero or multiple Hidden Layers.
 
 
 ### Further Readings
