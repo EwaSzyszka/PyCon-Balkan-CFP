@@ -49,12 +49,59 @@ Softmax function:
 
 ### Project methodology
 
+__________ DATA PREPARATION AND PRE_PROCESSING __________
+
 
 1. Get the training data 
 
-Dataset: https://www.kaggle.com/kuzivakwashe/significant-asl-sign-language-alphabet-dataset
+  - DATASET: https://www.kaggle.com/kuzivakwashe/significant-asl-sign-language-alphabet-dataset
 
-2. Pre-process the data 
+2. Organize the data in the folder 
+
+  - INPUT: Kagle images of each letter in the Sign Alphabet 
+  - OUTPUT: A folder of subfolders for each letter
+  - WHAT: Organize the data for training the VGG-16 model
+
+3. Resize the data 
+
+  - INPUT: 
+  - OUTPUT: 
+  - WHAT: 
+  
+4. One hot encode the categories of the dat a
+
+  - INPUT: 
+  - OUTPUT: 
+  - WHAT: 
+  
+5. Save images as numpy arrays 
+
+  - INPUT: 
+  - OUTPUT: 
+  - WHAT: 
+  
+6. Normalizing the data 
+
+  - INPUT: 
+  - OUTPUT: 
+  - WHAT: 
+  
+ 7. Train-Test split the data
+ 
+  - INPUT: 
+  - OUTPUT: 
+  - WHAT: 
+  
+ 8. Reshaping the numpy arrays 
+ 
+  - INPUT: 
+  - OUTPUT: 
+  - WHAT: 
+  
+ __________ SETTING UP THE VGG-16 ARCHITECTURE __________
+ 
+ 9. 
+  
 2. Train a Keras model on a VGG-16 Architecture for the sign language alphabet 
 
 https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5 
