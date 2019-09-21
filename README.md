@@ -24,7 +24,7 @@ _______EXTRACTING THE HIGH LEVEL FEATURES __________
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
-https://latex.codecogs.com/gif.latex?f(y_{i})=&space;\frac{e^{y^{i}}}{\sum&space;e^{y^{i}}}
+<img src="https://latex.codecogs.com/gif.latex?f(y_{i})=&space;\frac{e^{y^{i}}}{\sum&space;e^{y^{i}}}" title="f(y_{i})= \frac{e^{y^{i}}}{\sum e^{y^{i}}}" />
 
 ### Methodology
 
