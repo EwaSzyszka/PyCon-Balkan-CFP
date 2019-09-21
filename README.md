@@ -26,6 +26,24 @@ https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resn
 
 ### Glossary 
 
+Kernel/filter = 
+Feature Map = 
+Stride = 
+Zero-padding = 
+Whide convolution = 
+Narrow convolution = 
+ReLU activation function = 
+Tahn activation function = 
+Spatial pooling = 
+Deep Neural Network = 
+Hidden Layers = 
+Convolutional Layer = 
+Pooling Layer = 
+Fully connected layer = 
+Activation layer = 
+Max and min pooling = 
+
+
 
 ### Further Readings
 
