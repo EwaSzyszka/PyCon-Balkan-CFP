@@ -143,29 +143,29 @@ __________ MODEL ASSESMENT __________
 Kernel/filter =  
 Feature Map =   
 Stride =   
-Zero-padding = 
-Whide convolution = 
-Narrow convolution = 
-ReLU activation function = 
-Tahn activation function = 
-Spatial pooling = 
-Deep Neural Network = 
-Hidden Layers = 
-Convolutional Layer = 
-Pooling Layer = 
-Fully connected layer = 
-Activation layer = 
-Max and min pooling = 
-Feature learning = 
-Perceptron = 
-feed-forward neural network
-backpropagation 
-Softmax Classification 
-Dot product = filter * pixel wise representation of the input
-Overfitting = 
-Multilayer perceptron = 
-feedforward network = will only have a single input layer and a single output layer, it can have zero or multiple Hidden Layers.
-Forward propagation = 
+Zero-padding =   
+Whide convolution =   
+Narrow convolution =   
+ReLU activation function =   
+Tahn activation function =   
+Spatial pooling =   
+Deep Neural Network =   
+Hidden Layers =   
+Convolutional Layer =   
+Pooling Layer =   
+Fully connected layer =   
+Activation layer =   
+Max and min pooling =   
+Feature learning =   
+Perceptron =   
+feed-forward neural network =  
+backpropagation =  
+Softmax Classification =  
+Dot product = filter * pixel wise representation of the input  
+Overfitting =   
+Multilayer perceptron =   
+feedforward network = will only have a single input layer and a single output layer, it can have zero or multiple Hidden Layers.  
+Forward propagation =   
 
 
 ### Further Readings
