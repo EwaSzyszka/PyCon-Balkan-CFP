@@ -4,6 +4,8 @@ We will first introduce Convolutional Neural Networks and see what are the basic
 
 ### What are Convolutional Neural Networks
 
+<img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' >
+
 Here place an image and gifs illustrating the overview of the CNN
 
 _______EXTRACTING THE HIGH LEVEL FEATURES __________
