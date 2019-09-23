@@ -7,7 +7,7 @@ We will first introduce Convolutional Neural Networks and see what are the basic
 <img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' >
 
 
-The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block is to extract the high level features from the images and the second block aims at classifying which of the given labels can be attributed to a specific image. Let's take a deeper dive:
+The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block is to `extract the high level features` from the images and the second block aims at `classifying` which of the given labels can be attributed to a specific image. Let's take a deeper dive:
 
 _______EXTRACTING THE HIGH LEVEL FEATURES __________
 
