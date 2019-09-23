@@ -172,6 +172,7 @@ Forward propagation =
 http://colah.github.io/posts/2014-07-Conv-Nets-Modular/
 http://cs231n.github.io/
 https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/
+https://hackernoon.com/learning-keras-by-implementing-vgg16-from-scratch-d036733f2d5
 
 ### About me 
 I am a Computer Science student at Minerva Schools at KGI and Electronics Engineering student at AGH. This workshop is based on my [Bachelor's Thesis Proposal](https://ewaszyszka.myportfolio.com/bachelor-thesis-proposal). If you are interested delving further into the topic and exploring it further feel free to reach out (ewa.szyszka@minerva.kgi.edu).
