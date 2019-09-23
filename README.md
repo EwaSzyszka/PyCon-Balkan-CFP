@@ -13,6 +13,8 @@ The Convolutional Neural Networks architecture can be broken down into two main 
 
 1. Convolutional layers  
   
+  <iframe src="https://giphy.com/embed/i4NjAwytgIRDW" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/blog-daniel-keypoints-i4NjAwytgIRDW">via GIPHY</a></p>
+  
  - INPUT: Image as an array of pixels 
  - OUTPUT : produce the feature maps 
  - WHAT: extract various high level features based on the Kernel used 
