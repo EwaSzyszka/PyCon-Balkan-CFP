@@ -140,9 +140,9 @@ __________ MODEL ASSESMENT __________
 
 ### Glossary 
 
-Kernel/filter = 
-Feature Map = 
-Stride = 
+Kernel/filter =  
+Feature Map =   
+Stride =   
 Zero-padding = 
 Whide convolution = 
 Narrow convolution = 
