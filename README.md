@@ -132,6 +132,12 @@ The VGG16 architecture consists of twelve convolutional layers, some of which ar
 
 Here paste images of sign recognition screen shots 
 
+__________ MODEL ASSESMENT __________
+
+1. Confusion matrix
+2. Accuracy across epochs
+3. Model loss
+
 ### Glossary 
 
 Kernel/filter = 
