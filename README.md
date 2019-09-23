@@ -9,9 +9,10 @@ We will first introduce Convolutional Neural Networks and see what are the basic
 
 The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block is to `extract the high level features` from the images and the second block aims at `classifying` which of the given labels can be attributed to a specific image. Let's take a deeper dive:
 
-_______EXTRACTING THE HIGH LEVEL FEATURES __________
+### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
-1. Convolutional layers 
+1. Convolutional layers  
+  
  - INPUT: Image as an array of pixels 
  - OUTPUT : produce the feature maps 
  - WHAT: extract various high level features based on the Kernel used 
