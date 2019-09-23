@@ -3,9 +3,8 @@ Welcome to the workshop in which will delve into basics of Sign Lanaguage Recogn
 We will first introduce Convolutional Neural Networks and see what are the basic building blocks of them, next we will look at the Sign Language Alphabet Recognition project as an example of Neural Network Implementation. After this workshop you will be familiar with the basic Neural Network terminology and you will build an understanding of a sample Neural Network Architecture, namely the [VGG-16 architecture](https://arxiv.org/pdf/1409.1556.pdf). At the end of this document there is a glossary list, which you are free to refer to at any point. For those interested in pursuing further their adventure with Convolutional Neural Nets there is a short suggested literature list provided at the end as well.
 
 ### What are Convolutional Neural Networks: VGG-16 case study 
-<dl>
-<dt><img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' ></dt>
-</dl>
+<img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' >
+
 
 The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block is to `extract the high level features` from the images and the second block aims at `classifying` which of the given labels can be attributed to a specific image. Let's take a deeper dive:
 
@@ -13,7 +12,7 @@ The Convolutional Neural Networks architecture can be broken down into two main 
 
 1. Convolutional layers  
   
-  <iframe src="https://giphy.com/embed/i4NjAwytgIRDW" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/blog-daniel-keypoints-i4NjAwytgIRDW">via GIPHY</a></p>
+  <img src="https://media.giphy.com/media/i4NjAwytgIRDW/giphy.gif">
   
  - INPUT: Image as an array of pixels 
  - OUTPUT : produce the feature maps 
