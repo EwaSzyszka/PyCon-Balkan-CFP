@@ -12,6 +12,7 @@ The Convolutional Neural Networks architecture can be broken down into two main 
 
 <img src="https://photos.app.goo.gl/f8ocmZnCS2skZj5T8"> 
 <a href="https://ibb.co/9NB3XWT"><img src="https://i.ibb.co/Xb6kBts/vgg-16.jpg" alt="vgg-16" border="0"></a>
+<a href="https://ibb.co/VWqhYJr"><img src="https://i.ibb.co/tMJNpQk/Screenshot-2019-09-24-at-07-58-53.png" alt="Screenshot-2019-09-24-at-07-58-53" border="0"></a>
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
