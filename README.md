@@ -8,10 +8,8 @@ If you ever do even the simplest Google search of Convolutional Neural Networks 
 <img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' width=80% height=80% >
 
 
-The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block is to `extract the high level features` from the images and the second block aims at `classifying` which of the given labels can be attributed to a specific image. Let's take a deeper dive:
+The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
 
-<img src="https://photos.app.goo.gl/f8ocmZnCS2skZj5T8"> 
-<a href="https://ibb.co/9NB3XWT"><img src="https://i.ibb.co/Xb6kBts/vgg-16.jpg" alt="vgg-16" border="0"></a>
 <a href="https://ibb.co/VWqhYJr"><img src="https://i.ibb.co/tMJNpQk/Screenshot-2019-09-24-at-07-58-53.png" alt="Screenshot-2019-09-24-at-07-58-53" border="0"></a>
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
