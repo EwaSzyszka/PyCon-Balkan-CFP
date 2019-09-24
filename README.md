@@ -10,7 +10,8 @@ If you ever do even the simplest Google search of Convolutional Neural Networks 
 
 The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block is to `extract the high level features` from the images and the second block aims at `classifying` which of the given labels can be attributed to a specific image. Let's take a deeper dive:
 
-<img src="https://photos.app.goo.gl/f8ocmZnCS2skZj5T8">  
+<img src="https://photos.app.goo.gl/f8ocmZnCS2skZj5T8"> 
+<a href="https://ibb.co/9NB3XWT"><img src="https://i.ibb.co/Xb6kBts/vgg-16.jpg" alt="vgg-16" border="0"></a>
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
