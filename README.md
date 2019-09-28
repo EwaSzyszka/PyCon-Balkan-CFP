@@ -26,11 +26,6 @@ There are different ways of reach the same goal. Various CNN Architectures came 
 ##### WHAT IS VGG-16: It is a CNN Architecture
 
 
-
-
-
-If you ever do even the simplest Google search of Convolutional Neural Networks most certainly you will come across the  image that you see below. Let's take a closer look and break it down. 
-
 <img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' width=80% height=80% >
 
 
