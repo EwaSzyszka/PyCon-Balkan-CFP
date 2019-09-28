@@ -9,9 +9,15 @@ Welcome to the workshop in which will delve into basics of Convolutional Neural 
 It's a deep learning algorithm, that takes an image as an input, extracts features from it, assignes weights and biases to various aspects of the image to be able at the end to classify the image and assign a label to the input. 
 
 ##### WHAT KIND OF PROBLEMS ARE THEY GOOD FOR:
-CNNs can be used for Image Classification Projects or Semantic Segmentation Problems.
 
-![Semantic segmentation|20%](https://miro.medium.com/max/4080/1*wninXztJ90h3ZHtKXCNKFA.jpeg) 
+Image classification:  
+![Image classification](https://i.stack.imgur.com/mFBCV.png) 
+
+Semantic Segmentation:  
+![Semantic segmentation](https://miro.medium.com/max/4080/1*wninXztJ90h3ZHtKXCNKFA.jpeg) 
+
+Object Detection:  
+![Object detection](https://hackernoon.com/hn-images/1*mGXlIHIjFLa3ZiTOJcQmyw.jpeg) 
 
 
 ##### WHAT IS A CNN ARCHITECTURE: 
