@@ -4,14 +4,14 @@ Welcome to the workshop in which will delve into basics of Convolutional Neural 
 ***** 
 
 ### Convolutional Neural Network Basic Building blocks: VGG-16 case study
-
+\n
 ##### WHAT ARE CNN: 
 It's a deep learning algorithm, that takes an image as an input, extracts features from it, assignes weights and biases to various aspects of the image to be able at the end to classify the image and assign a label to the input. 
 
 ##### WHAT KIND OF PROBLEMS ARE THEY GOOD FOR:
 CNNs can be used for Image Classification Projects or Semantic Segmentation Problems.
 
-![Semantic segmentation](https://miro.medium.com/max/4080/1*wninXztJ90h3ZHtKXCNKFA.jpeg) 
+![Semantic segmentation|512x397,20%](https://miro.medium.com/max/4080/1*wninXztJ90h3ZHtKXCNKFA.jpeg) 
 
 
 ##### WHAT IS A CNN ARCHITECTURE: 
