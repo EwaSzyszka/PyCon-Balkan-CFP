@@ -1,9 +1,6 @@
 ## Sign Lanaguage Alphabet Recognition with Python
-Welcome to the workshop in which will delve into basics of Convolutional Neural Networks via a case-study of a Sign Lanaguage Alphabet Recognition in Keras. We will first introduce a state-of-art Convolutional Neural Network architecture - [VGG-16](https://arxiv.org/pdf/1409.1556.pdf) - and break it down to its smallest building blocks.  After this workshop you will be familiar with the basic Neural Network terminology and you will build an understanding how they can be utilized. At the end of this document there is a glossary list, which you are free to refer to at any point. For those interested in pursuing further their adventure with Convolutional Neural Nets there is a suggested reading list provided at the end as well. The workshop will be divided into the following thematic sections:
+Welcome to the workshop in which will delve into basics of Convolutional Neural Networks via a case-study of a Sign Lanaguage Alphabet Recognition in Keras. We will first introduce a state-of-art Convolutional Neural Network architecture - [VGG-16](https://arxiv.org/pdf/1409.1556.pdf) - and break it down to its smallest building blocks.  After this workshop you will be familiar with the basic Neural Network terminology and you will build an understanding how they can be utilized. At the end of this document there is a glossary list, which you are free to refer to at any point. For those interested in pursuing further their adventure with Convolutional Neural Nets there is a suggested reading list provided at the end as well. 
 
-1.) Convolutional Neural Network(CNN) Basic Building blocks: VGG-16 case study   
-2.) Model assessment techniques   
-3.) Computer Vision case study: Sign Language Alphabet Detection   
 ***** 
 
 ### Convolutional Neural Network Basic Building blocks: VGG-16 case study
@@ -13,6 +10,9 @@ It's a deep learning algorithm, that takes an image as an input, extracts featur
 
 ##### WHAT KIND OF PROBLEMS ARE THEY GOOD FOR:
 CNNs can be used for Image Classification Projects or Semantic Segmentation Problems.
+
+![Semantic segmentation](https://miro.medium.com/max/4080/1*wninXztJ90h3ZHtKXCNKFA.jpeg) 
+
 
 ##### WHAT IS A CNN ARCHITECTURE: 
 There are different ways of reach the same goal. Various CNN Architectures came to exsistence as alternative approaches to similar problem types. Each architecture aims at improving the previous design with respect to factors such as minimization of false positive rate, improving the accuracy of the model, decreasing the computational power required to train the model ect. A CNN has basic building blocks such as Convolutional Layers, Activation Functions, Pooling Layers, Fully Connected Layers and many more which can be re-arranged in multiple ways. The ways in which those blocks are re-arranged are so called the CNN architectures.  
