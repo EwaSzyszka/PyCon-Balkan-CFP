@@ -11,12 +11,12 @@ It's a deep learning algorithm, that takes an image as an input, extracts featur
 ##### WHAT KIND OF PROBLEMS ARE THEY GOOD FOR:
 
 Image classification:  
-![Image classification](https://i.stack.imgur.com/mFBCV.png) 
+![Image classification](https://www.pyimagesearch.com/wp-content/uploads/2018/04/keras_multi_label_dataset.jpg) 
 
 Semantic Segmentation:  
 ![Semantic segmentation](https://miro.medium.com/max/4080/1*wninXztJ90h3ZHtKXCNKFA.jpeg) 
 
-Object Detection:  
+Object Localization:  
 ![Object detection](https://hackernoon.com/hn-images/1*mGXlIHIjFLa3ZiTOJcQmyw.jpeg) 
 
 
