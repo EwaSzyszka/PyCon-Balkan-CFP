@@ -4,7 +4,7 @@ Welcome to the workshop in which will delve into basics of Convolutional Neural 
 1.) Convolutional Neural Network(CNN) Basic Building blocks: VGG-16 case study   
 2.) Model assessment techniques   
 3.) Computer Vision case study: Sign Language Alphabet Detection   
-
+***** 
 
 ### Convolutional Neural Network Basic Building blocks: VGG-16 case study
 
