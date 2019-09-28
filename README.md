@@ -8,6 +8,18 @@ Welcome to the workshop in which will delve into basics of Convolutional Neural 
 
 ### Convolutional Neural Network Basic Building blocks: VGG-16 case study
 
+WHAT ARE CNN: It's a deep learning algorithm, that takes an image as an input, extracts features from it, assignes weights and biases to various aspects of the image to be able at the end to classify the image and assign a label to the input. 
+
+<mark>WHAT KIND OF PROBLEMS ARE THEY GOOD FOR<mark>: CNNs can be used for Image Classification Projects or Semantic Segmentation Problems.
+
+WHAT IS A CNN ARCHITECTURE: There are different ways of reach the same goal. Various CNN Architectures came to exsistence as alternative approaches to similar problem types. Each architecture aims at improving the previous design with respect to factors such as minimization of false positive rate, improving the accuracy of the model, decreasing the computational power required to train the model ect. A CNN has basic building blocks such as Convolutional Layers, Activation Functions, Pooling Layers, Fully Connected Layers and many more which can be re-arranged in multiple ways. The ways in which those blocks are re-arranged are so called the CNN architectures.  
+
+WHAT IS VGG-16: It is a CNN Architecture
+
+
+
+
+
 If you ever do even the simplest Google search of Convolutional Neural Networks most certainly you will come across the  image that you see below. Let's take a closer look and break it down. 
 
 <img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' width=80% height=80% >
