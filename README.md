@@ -1,9 +1,9 @@
 ## Sign Lanaguage Alphabet Recognition with Python
 Welcome to the workshop in which will delve into basics of Convolutional Neural Networks via a case-study of a Sign Lanaguage Alphabet Recognition in Keras. We will first introduce a state-of-art Convolutional Neural Network architecture - [VGG-16](https://arxiv.org/pdf/1409.1556.pdf) - and break it down to its smallest building blocks.  After this workshop you will be familiar with the basic Neural Network terminology and you will build an understanding how they can be utilized. At the end of this document there is a glossary list, which you are free to refer to at any point. For those interested in pursuing further their adventure with Convolutional Neural Nets there is a suggested reading list provided at the end as well. The workshop will be divided into the following thematic sections:
 
-1.) Convolutional Neural Network(CNN) Basic Building blocks: VGG-16 case study 
-2.) Model assessment techniques 
-3.) Computer Vision case study: Sign Language Alphabet Detection 
+1.) Convolutional Neural Network(CNN) Basic Building blocks: VGG-16 case study   
+2.) Model assessment techniques   
+3.) Computer Vision case study: Sign Language Alphabet Detection   
 
 
 ### Convolutional Neural Network Basic Building blocks: VGG-16 case study
