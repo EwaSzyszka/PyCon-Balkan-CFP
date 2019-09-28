@@ -11,7 +11,7 @@ It's a deep learning algorithm, that takes an image as an input, extracts featur
 ##### WHAT KIND OF PROBLEMS ARE THEY GOOD FOR:
 
 Image classification:  
-![Image classification](https://www.pyimagesearch.com/wp-content/uploads/2018/04/keras_multi_label_dataset.jpg) 
+![Image classification](https://miro.medium.com/max/3840/1*oB3S5yHHhvougJkPXuc8og.gif) 
 
 Semantic Segmentation:  
 ![Semantic segmentation](https://miro.medium.com/max/4080/1*wninXztJ90h3ZHtKXCNKFA.jpeg) 
