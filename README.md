@@ -80,54 +80,30 @@ Next, we perform Max pooling again and reduce the size to 7 x 7 and afterwards `
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/ypT7bnP/13.jpg" alt="13" border="0"></a>
 
-After flattening we optain three Layers, that are known as `Fully Connected Layers`, as each element in the network is connected to each element in the next layer. Using Backpropagation the model adjusts the weights. In order to adjust the weights and biases of our model we need an `Error function`, some of the common error functions are `Mean Square Errors` or `Gradient descent`. They are optimization methods that adjust the weights and biases of the model in a way that enables us to produce output that comes out in the form of `logits`. Logits are unnormalized predictions of the model. 
+After flattening we optain three Layers, that are known as `Fully Connected Layers`, as each element in the network is connected to each element in the next layer. Using `Backpropagation` the model adjusts the weights. In order to adjust the weights and biases of our model the predicted value is compared to the actual output value (the loss function is used to calculate the error value). The derrivative of the error value with respect to every weight in a layer and then layer by layer adjust the weights using derrivatives. They are optimization methods that adjust the weights and biases of the model in a way that enables us to produce output that comes out in the form of `logits`. Logits are unnormalized predictions of the model. 
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/YR7Db4h/14.jpg" alt="14" border="0"></a>
 
-In the last step the logits values are normalized and with help of the `Softmax function` they are adjusted and turned into probabilities.
+In the last step the logits values are normalized and with help of the `Softmax function` they are adjusted and turned into probabilities. The output of the model are the probabilities for each label.
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/GFKWJcJ/16.jpg" alt="16" border="0"></a>
 
-### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
+Model constructed and trained is ready for assesment. Some of the common terminology used for model assesment are the following:   
+`top-5 error` is a way to say that among the top 5 label percentages we have the correct value   
+`Confusion matrix` which showes how many times did the model output true values and how many false positives did it output  
+`Accuracy` ratio of correctly predicted observation to the total observations  
+`precision` ratio of correctly predicted positive observations to the total predicted positive observations  
+`recall` ratio of correctly predicted positive observations to the all observations in actual class  
+`F1 score`  F1 Score = 2*(Recall * Precision) / (Recall + Precision) 
 
-1. Convolutional layers  
-  
 
-  
- - INPUT: Image as an array of pixels 
- - OUTPUT : produce the feature maps 
- - WHAT: extract various high level features based on the Kernel used 
- 
-2. Max pooling layer 
-  - INPUT: Convoluted image
-  - OUTPUT: Downsized array 
-  - WHAT: downsising the layer 
-  
-3. ReLU activation
+`Batch Size`
+`Epoch`
+`Itterations`
 
- <img src="https://latex.codecogs.com/gif.latex?f(x)=&space;max(0,x)" title="f(x)= max(0,x)" />
- 
-  - INPUT: Downsized array 
-  - OUTPUT: Rectified Feature Map 
-  - WHAT: turn all negative numbers to 0 and return the positive values as they were 
-  
- 
-  
- ________USING HIGH LEVEL FEATURES TO CLASIFY THE  INPUT IMAGE ______
- 
-1. Fully connected layers 
-  - INPUT:Rectified and downsized Feature map
-  - OUTPUT: 
-  - WHAT: 
-  
-5. Softmax activation function 
 
-<img src="https://latex.codecogs.com/gif.latex?f(x_{i})=&space;\frac{e^{x^{i}}}{\sum&space;e^{x^{i}}}" title="f(x_{i})= \frac{e^{x^{i}}}{\sum e^{x^{i}}}" />
+`Loss function` is a function computing the error for a single training and the `Cost function` is an average of the loss function of the entire training set. 
 
-  - INPUT: vector of arbitrary real-valued score
-  - OUTPUT: vector of values that add up to 1 
-  - WHAT: translates the values into probabilities
-  
 
 
 ### Project methodology
@@ -146,41 +122,17 @@ __________ DATA PREPARATION AND PRE_PROCESSING __________
   - WHAT: Organize the data for training the VGG-16 model
 
 3. Resize the data 
-
-  - INPUT: 
-  - OUTPUT: 
-  - WHAT: 
   
 4. One hot encode the categories of the dat a
-
-  - INPUT: 
-  - OUTPUT: 
-  - WHAT: 
   
 5. Save images as numpy arrays 
-
-  - INPUT: 
-  - OUTPUT: 
-  - WHAT: 
   
 6. Normalizing the data 
 
-  - INPUT: 
-  - OUTPUT: 
-  - WHAT: 
+7. Train-Test split the data
   
- 7. Train-Test split the data
+8. Reshaping the numpy arrays 
  
-  - INPUT: 
-  - OUTPUT: 
-  - WHAT: 
-  
- 8. Reshaping the numpy arrays 
- 
-  - INPUT: 
-  - OUTPUT: 
-  - WHAT: 
-  
  __________ SETTING UP THE VGG-16 ARCHITECTURE __________
  
 The VGG16 architecture consists of twelve convolutional layers, some of which are followed by maximum pooling layers and then four fully-connected layers and finally a 1000-way softmax classifier. HIstory and a bit of introduction of VGG-16 and CNN.
