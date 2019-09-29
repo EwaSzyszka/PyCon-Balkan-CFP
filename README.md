@@ -26,9 +26,6 @@ There are different ways of reach the same goal. Various CNN Architectures came 
 ##### WHAT IS VGG-16: It is a CNN Architecture
 
 
-<img src='https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png' width=80% height=80% >
-
-
 The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/C2z0jWM/1.jpg" alt="1" border="0"></a>
