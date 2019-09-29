@@ -31,7 +31,7 @@ There are different ways of reach the same goal. Various CNN Architectures came 
 
 The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
 
-<a href="https://photos.app.goo.gl/4hmS7hUF7MxHrHb47"></a>
+<img src="https://photos.app.goo.gl/4hmS7hUF7MxHrHb47">
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
