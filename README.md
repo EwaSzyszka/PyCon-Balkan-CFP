@@ -20,12 +20,16 @@ Object Localization:
 ##### WHAT IS A CNN ARCHITECTURE: 
 There are different ways of reach the same goal. Various CNN Architectures came to exsistence as alternative approaches to similar problem types. Each architecture aims at improving the previous design with respect to factors such as minimization of false positive rate, improving the accuracy of the model, decreasing the computational power required to train the model ect. A CNN has basic building blocks such as Convolutional Layers, Activation Functions, Pooling Layers, Fully Connected Layers and many more which can be re-arranged in multiple ways. The ways in which those blocks are re-arranged are so called the CNN architectures.  
 
-##### WHAT IS VGG-16: It is a CNN Architecture
+##### VGG-16 ARCHITECTURE: 
 
 
 The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/C2z0jWM/1.jpg" alt="1" border="0"></a>
+
+The 
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/Qvk53WR/2.jpg" alt="2" border="0"></a>
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
