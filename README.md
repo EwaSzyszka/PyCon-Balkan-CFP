@@ -52,6 +52,32 @@ Once again we perform convolution twice with 0-padding added and with the kernel
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/K2pXqTc/5.jpg" alt="5" border="0"></a>
 
+We perform Max Pooling and reduce the dimentions to 56 x 56
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/YPQLLRh/6.jpg" alt="6" border="0"></a>
+
+Next, three convolutions are performed with the kernel depth of 256
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/HqR3yKh/8.jpg" alt="8" border="0"></a>
+
+We perform Max Pooling and reduce the dimentions to 28 x 28
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/zPNKLJS/9.jpg" alt="9" border="0"></a>
+
+Next, three convolutions are performed with the kernel depth of 512
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/5BG9ddt/10.jpg" alt="10" border="0"></a>
+
+We perform Max Pooling and reduce the dimentions to 14 x 14
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/djZW6Gh/11.jpg" alt="11" border="0"></a>
+
+Next, three convolutions are performed with the kernel depth of 512
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/d0tMfh0/12.jpg" alt="12" border="0"></a>
+
+Next, we 
+
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
