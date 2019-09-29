@@ -34,17 +34,30 @@ Next, there are two `Convolutional layers`, which perform a convolution operatio
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/L0YbFJJ/3.jpg" alt="3" border="0"></a>
 
+Animated convolution operation:
+
+<img src="https://media.giphy.com/media/i4NjAwytgIRDW/giphy.gif">
+
 Here is an illustration of how the input image changes after the ReLU function is applied (all black pixels are turned gray)
 
 <img src="https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/71_blog_image_3.png">
 
 <img src="https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/71_blog_image_4.png">
 
+The next step is `max pooling`, with a window size 2 x 2, which means that from 2 x 2 region we chose the highest value and we re-write it to produce new layer of smaller dimentions 112 x 112.
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/9yCKMFB/4.jpg" alt="4" border="0"></a>
+
+Once again we perform convolution twice with 0-padding added and with the kernel depth 128. 
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/K2pXqTc/5.jpg" alt="5" border="0"></a>
+
+
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
 1. Convolutional layers  
   
-  <img src="https://media.giphy.com/media/i4NjAwytgIRDW/giphy.gif">
+
   
  - INPUT: Image as an array of pixels 
  - OUTPUT : produce the feature maps 
