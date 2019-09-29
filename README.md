@@ -22,13 +22,23 @@ There are different ways of reach the same goal. Various CNN Architectures came 
 
 ##### VGG-16 ARCHITECTURE: 
 
-There are many CNN Architectures that researchers came up with such as [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf), [ResNet](https://arxiv.org/pdf/1512.03385.pdf) or [VGG-16](https://arxiv.org/pdf/1409.1556.pdf). VGG-16 is an architecture that is easy to understand and illustrates well the main building blocks of a CNN network. The Convolutional Neural Networks VGG-16 architecture consists of two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
+There are many CNN Architectures that researchers came up with such as [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf), [ResNet](https://arxiv.org/pdf/1512.03385.pdf) or [VGG-16](https://arxiv.org/pdf/1409.1556.pdf). The VGG-16 is an architecture that is easy to understand and illustrates well the main building blocks of a CNN network. The Convolutional Neural Networks VGG-16 architecture consists of two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/C2z0jWM/1.jpg" alt="1" border="0"></a>
 
-The first step is to feed input image into the Convolutional Network. The VGG-16 
+The first step is to feed input image into the Convolutional Network, which is an RGB email 224 pixels by 224 pixels
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Qvk53WR/2.jpg" alt="2" border="0"></a>
+
+Next, there are two `Convolutional layers` added with a `0-padding` to ensure that the output after convolution operation has the same dimentions as the input. `The kernel` has the size 3 x 3 and depth 64 (meaning that there are 64 different kernels applied, each detecting a different feature). After each Convolution a `ReLU activation function` is applied, which is placed in order to introduce non-linearity to the model. Non-linearity is important, as if we do not introduce it in the model, then the network, no matter how many layers deep, would behave like a single-layer perceptron. The ReLU activation function also overcomes `the vanishing gradient problem`, by having the gradient either 0 (for the values below 0) or 1 (for the values above 0). As, the gradient is either 0 or 1 it does not saturate (it does not vanish) 
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/L0YbFJJ/3.jpg" alt="3" border="0"></a>
+
+Here is an illustration of how the input image changes after the ReLU function is applied (all black pixels are turned gray)
+
+<img src="https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/71_blog_image_3.png">
+
+<img src="https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/71_blog_image_4.png">
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
