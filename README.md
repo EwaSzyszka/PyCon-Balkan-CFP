@@ -97,29 +97,13 @@ Model constructed and trained is ready for assesment. Some of the common termino
 `F1 score`  F1 Score = 2*(Recall * Precision) / (Recall + Precision) 
 
 
-`Batch Size`
-`Epoch`
-`Itterations`
-
-
-`Loss function` is a function computing the error for a single training and the `Cost function` is an average of the loss function of the entire training set. 
-
-
-
 ### Project methodology
 
-__________ DATA PREPARATION AND PRE_PROCESSING __________
+1. Get the training data   
 
-
-1. Get the training data 
-
-  - DATASET: https://www.kaggle.com/kuzivakwashe/significant-asl-sign-language-alphabet-dataset
+DATASET: https://www.kaggle.com/kuzivakwashe/significant-asl-sign-language-alphabet-dataset
 
 2. Organize the data in the folder 
-
-  - INPUT: Kagle images of each letter in the Sign Alphabet 
-  - OUTPUT: A folder of subfolders for each letter
-  - WHAT: Organize the data for training the VGG-16 model
 
 3. Resize the data 
   
@@ -132,48 +116,137 @@ __________ DATA PREPARATION AND PRE_PROCESSING __________
 7. Train-Test split the data
   
 8. Reshaping the numpy arrays 
+
+### Setting up the VGG-16 Architecture 
  
- __________ SETTING UP THE VGG-16 ARCHITECTURE __________
- 
-The VGG16 architecture consists of twelve convolutional layers, some of which are followed by maximum pooling layers and then four fully-connected layers and finally a 1000-way softmax classifier. HIstory and a bit of introduction of VGG-16 and CNN.
+The VGG16 architecture consists of twelve convolutional layers, some of which are followed by maximum pooling layers and then four fully-connected layers and finally a 1000-way softmax classifier. 
  
  1. Setting up the Keras implementation
- 
- Here paste a short code sample in Keras
- 
- 2. Make a test prediction 
- 
-  - INPUT: 
-  - OUTPUT: 
-  - WHAT: 
-  
-  3. Assess the model 
-  
-  Here give some metrix to how the model performed
-  
-  4. Save the model 
-  
-  __________ CAPTURING THE IMAGES FOR SIGN RECOGNITION __________
- 
- 1. Connect to the camera 
- 
- 2. Press enter to capture the frame 
- 
- 3. Press escape when all of the frames of your ineterst are already captured 
- 
-   __________ SIGN RECOGNITION FROM CAPTURED IMAGES __________
- 
- 1. Load the model 
- 
- 2. Use the model to classify the unseen data 
 
-Here paste images of sign recognition screen shots 
+ ```
+ #_______ VGG ________
 
-__________ MODEL ASSESMENT __________
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers.convolutional import Conv2D
+from keras.layers import Convolution2D as Conv2D
+from keras.layers import Conv2D
+from keras.layers.convolutional import Deconv2D as Conv2DTranspose
+from tensorflow.keras import backend as k
+from tensorflow.keras.models import load_model
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import MaxPooling2D
+from tensorflow.python.keras.layers import Flatten, Dense
+model = Sequential()
 
-1. Confusion matrix
-2. Accuracy across epochs
-3. Model loss
+# Conv Block 1
+model.add(Conv2D(64, (3, 3), padding='same', activation='relu', input_shape=X_train.shape[1:], name='block1_conv1', data_format='channels_last'))
+model.add(Conv2D(64, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+
+# Conv Block 2
+model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+
+# Conv Block 3
+model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+
+# Conv Block 4
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+
+# Conv Block 5
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(512, (3, 3), activation='relu', padding='same'))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+
+# FC layers
+model.add(Flatten())
+model.add(Dense(4096, activation='relu'))
+model.add(Dense(4096, activation='relu'))
+model.add(Dense(1000, activation='softmax'))
+
+
+model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=3)
+ ```
+ 
+ ### Capturing the images for sign recognition 
+ 
+ ```
+ #______ TIME TO CAPTURE DATA _____
+
+import cv2
+
+cam = cv2.VideoCapture(0)
+
+cv2.namedWindow("test")
+
+img_counter = 0
+
+while True:
+    ret, frame = cam.read()
+    cv2.imshow("test", frame)
+
+    
+    if not ret:
+        break
+    k = cv2.waitKey(1)
+
+    if k%256 == 27:
+        # ESC pressed
+        print("Escape hit, closing...")
+        break
+    elif k%256 == 32:
+        # SPACE pressed
+        img_name = "Desktop/Code/ImageRecognition/datacapture/opencv_frame_{}.png".format(img_counter)
+        cv2.imwrite(img_name, frame)
+        print("{} written!".format(img_name))
+        img_counter += 1
+
+cam.release()
+
+cv2.destroyAllWindows()
+ ```
+ 
+### Sign Recognition from captured images   
+ 
+ 
+  ```
+ images=glob.glob("Desktop/Code/ImageRecognition/datacapture/*.png")
+
+images_for_recognition = []
+
+for image in images:
+    img = Image.open(image)
+    images_for_recognition.append(img)
+    display(img)
+    
+    
+  #___MAKING THE PREDICTION ON THE CAPTURED DATA _____
+model_json_file =  "/Users/ewa_anna_szyszka/Desktop/model.json"
+model_weights_file = "/Users/ewa_anna_szyszka/Desktop/my_model.h5"
+
+'''Setting up the '''
+for i in images_for_recognition:
+    new_array = cv2.resize(np.array(i), (50, 50))
+    new_array = new_array.reshape(1,50,50,3)
+    a = SignLanguageModel(model_json_file, model_weights_file)
+    print(a.predict_letter(new_array))
+    
+ ```
+ 
+ <a href="https://ibb.co/LZzSNm2"><img src="https://i.ibb.co/nLsrP95/Screenshot-2019-09-29-at-17-36-20.png" alt="Screenshot-2019-09-29-at-17-36-20" border="0"></a>
+ 
+
+
 
 ### Glossary 
 
