@@ -22,12 +22,11 @@ There are different ways of reach the same goal. Various CNN Architectures came 
 
 ##### VGG-16 ARCHITECTURE: 
 
-
-The Convolutional Neural Networks architecture can be broken down into two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
+There are many CNN Architectures that researchers came up with such as [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf), [ResNet](https://arxiv.org/pdf/1512.03385.pdf) or [VGG-16](https://arxiv.org/pdf/1409.1556.pdf). VGG-16 is an architecture that is easy to understand and illustrates well the main building blocks of a CNN network. The Convolutional Neural Networks VGG-16 architecture consists of two main building blocks. The task of the first block colored in yellow is to `extract the high level features` from the images and the second block colored in blue aims at `classifying` which of the given labels can be attributed to a specific image. 
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/C2z0jWM/1.jpg" alt="1" border="0"></a>
 
-The 
+The first step is to feed input image into the Convolutional Network. The VGG-16 
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Qvk53WR/2.jpg" alt="2" border="0"></a>
 
