@@ -76,8 +76,17 @@ Next, three convolutions are performed with the kernel depth of 512
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/d0tMfh0/12.jpg" alt="12" border="0"></a>
 
-Next, we 
+Next, we perform Max pooling again and reduce the size to 7 x 7 and afterwards `flatten` the data in order to be able to feedit to the `Fully Connected Layers`. From this step on we entered the classification part of the VGG-16 model and we are no longer extracting the features from the input image.
 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/ypT7bnP/13.jpg" alt="13" border="0"></a>
+
+After flattening we optain three Layers, that are known as `Fully Connected Layers`, as each element in the network is connected to each element in the next layer. Using Backpropagation the model adjusts the weights. In order to adjust the weights and biases of our model we need an `Error function`, some of the common error functions are `Mean Square Errors` or `Gradient descent`. They are optimization methods that adjust the weights and biases of the model in a way that enables us to produce output that comes out in the form of `logits`. Logits are unnormalized predictions of the model. 
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/YR7Db4h/14.jpg" alt="14" border="0"></a>
+
+In the last step the logits values are normalized and with help of the `Softmax function` they are adjusted and turned into probabilities.
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/GFKWJcJ/16.jpg" alt="16" border="0"></a>
 
 ### _______   EXTRACTING THE HIGH LEVEL FEATURES  __________
 
