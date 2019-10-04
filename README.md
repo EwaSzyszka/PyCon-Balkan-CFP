@@ -1,5 +1,5 @@
 ## Sign Lanaguage Alphabet Recognition with Python
-Welcome to the workshop in which will delve into basics of Convolutional Neural Networks via a case-study of a Sign Lanaguage Alphabet Recognition in Keras. We will first introduce a state-of-art Convolutional Neural Network architecture - [VGG-16](https://arxiv.org/pdf/1409.1556.pdf) - and break it down to its smallest building blocks.  After this workshop you will be familiar with the basic Neural Network terminology and you will build an understanding how they can be utilized. At the end of this document there is a glossary list, which you are free to refer to at any point. For those interested in pursuing further their adventure with Convolutional Neural Nets there is a suggested reading list provided at the end as well. 
+Welcome to the workshop in which will delve into basics of Convolutional Neural Networks via a case-study of a Sign Lanaguage Alphabet Recognition in Keras. We will first introduce a state-of-art Convolutional Neural Network architecture - [VGG-16](https://arxiv.org/pdf/1409.1556.pdf) - and break it down to its smallest building blocks.  After this workshop you will be familiar with the basic Neural Network terminology and you will build an understanding how they can be utilized. For those interested in pursuing further their adventure with Convolutional Neural Nets there is a suggested reading list provided at the end as well. 
 
 ***** 
 
@@ -246,36 +246,6 @@ for i in images_for_recognition:
  <a href="https://ibb.co/LZzSNm2"><img src="https://i.ibb.co/nLsrP95/Screenshot-2019-09-29-at-17-36-20.png" alt="Screenshot-2019-09-29-at-17-36-20" border="0"></a>
  
 
-
-
-### Glossary 
-
-Kernel/filter =  
-Feature Map =   
-Stride =   
-Zero-padding =   
-Whide convolution =   
-Narrow convolution =   
-ReLU activation function =   
-Tahn activation function =   
-Spatial pooling =   
-Deep Neural Network =   
-Hidden Layers =   
-Convolutional Layer =   
-Pooling Layer =   
-Fully connected layer =   
-Activation layer =   
-Max and min pooling =   
-Feature learning =   
-Perceptron =   
-feed-forward neural network =  
-backpropagation =  
-Softmax Classification =  
-Dot product = filter * pixel wise representation of the input  
-Overfitting =   
-Multilayer perceptron =   
-feedforward network = will only have a single input layer and a single output layer, it can have zero or multiple Hidden Layers.  
-Forward propagation =   
 
 
 ### Further Readings
